@@ -1,4 +1,4 @@
-# FSD Placement Portal
+# Placements Portal
 
 A React-based web application designed to help students and alumni connect, track placement notifications, and access references for preparation.
 
