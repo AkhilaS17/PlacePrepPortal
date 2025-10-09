@@ -6,44 +6,6 @@ A React-based web application designed to help students and alumni connect, trac
 
 [Visit the Deployed Site](https://placeprepportal.netlify.app/)
 
-## 📁 Project Structure
-FSDPROJECT/
-├── public/
-│ ├── _redirects
-│ ├── gnits.jpeg
-│ ├── index.html
-│ ├── manifest.json
-│ └── robots.txt
-├── src/
-│ ├── assets/
-│ │ └── drives.jpg
-│ ├── components/
-│ │ ├── Alumni.css
-│ │ ├── Alumni.js
-│ │ ├── Footer.css
-│ │ ├── Footer.js
-│ │ ├── Home.css
-│ │ ├── Home.js
-│ │ ├── Navbar.css
-│ │ ├── Navbar.js
-│ │ ├── Notifications.css
-│ │ ├── Notifications.js
-│ │ ├── References.css
-│ │ └── References.js
-│ ├── context/
-│ │ └── NotificationContext.js
-│ ├── data/
-│ ├── App.css
-│ ├── App.js
-│ ├── App.test.js
-│ ├── index.css
-│ ├── index.js
-│ ├── reportWebVitals.js
-│ └── setupTests.js
-├── .gitignore
-├── package-lock.json
-├── package.json
-└── README.md
 
 ## 💡 Features
 
