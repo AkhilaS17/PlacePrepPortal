@@ -1,0 +1,149 @@
+.alumni-section {
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #f3f6ff, #e4ecff);
+  text-align: center;
+  min-height: 100vh;
+}
+
+.alumni-title {
+  font-size: 2rem;
+  color: #003366;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.alumni-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+/* 🔍 Filter and Search Bar */
+.filter-search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-dropdown,
+.search-input {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.filter-dropdown:focus,
+.search-input:focus {
+  border-color: #00509e;
+  box-shadow: 0 0 5px rgba(0, 80, 158, 0.3);
+}
+
+.search-input {
+  width: 220px;
+}
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.8rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+/* Card Styling */
+.alumni-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 80, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 255, 0.1);
+  text-align: left;
+  position: relative;
+}
+
+.alumni-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 24px rgba(0, 0, 80, 0.15);
+}
+
+.card-header h3 {
+  color: #002d62;
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.card-header .company {
+  color: #0073e6;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.card-header .role {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-body strong {
+  color: #003366;
+}
+
+/* Read More Button */
+.read-more-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: #003366;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background: #00509e;
+}
+
+.description {
+  margin-top: 1rem;
+  color: #333;
+  font-style: italic;
+  line-height: 1.5;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .alumni-title {
+    font-size: 1.7rem;
+  }
+  .alumni-card {
+    padding: 1rem;
+  }
+}
