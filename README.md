@@ -27,29 +27,35 @@ A React-based web application designed to help students and alumni connect, trac
 1. Clone the repository:
    ```bash
    git clone <your-repo-link>
-Navigate to the project folder:
+2. Navigate to the project folder:
 
 cd FSDPROJECT
 
 
-Install dependencies:
+2. Install dependencies:
 
 npm install
 
 
-Start the development server:
+4. Start the development server:
 
 npm start
 
-Step 5: Deploy your app
-
-Now run this command:
-
-npm run deploy
-
-This will:
+5. To Deploy your app
 
 Create a production build (npm run build)
 
-Upload the files to a special branch called gh-pages in your GitHub repo.
+6. Upload the files to a special branch called gh-pages in your GitHub repo.
+ Connect Your GitHub Project to Netlify
+   Go to https://app.netlify.com
+
+   Click “Add new site” → “Import an existing project.”
+   
+   Choose “GitHub” as the provider.
+   
+   If prompted, authorize Netlify to access your GitHub account.
+   
+   From the list, select your repository and configure the build settings.
+   
+   You will get the deployed site URL after your deployment is done.
 
