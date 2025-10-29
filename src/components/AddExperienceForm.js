@@ -37,7 +37,7 @@ function AddExperienceForm({ onClose }) {
           <textarea name="description" placeholder="Enter description" onChange={handleChange} required />
           <div className="form-actions">
             <button type="submit">Submit</button>
-            <button type="button" onClick={onClose}>Cancel</button>
+            <button type="submit" onClick={onClose}>Cancel</button>
           </div>
         </form>
       </div>
