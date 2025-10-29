@@ -71,7 +71,7 @@ function Alumni() {
           setShowForm(false);
           // You can push to experiences array or send to backend here
         }}
-        onCancel={() => setShowForm(false)}
+        onClose={() => setShowForm(false)}
       />
     )}
 
