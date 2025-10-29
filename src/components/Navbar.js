@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Notifications from "./Notifications";
 import "./Navbar.css";
 
@@ -9,7 +9,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-left">
-        <img src="/gnits.jpeg" alt="College Logo" className="logo" />
+        {/* 🔹 Logo wrapped in Link to Login */}
+        <Link to="/login" className="logo-link">
+          <img src="/gnits.jpeg" alt="College Logo" className="logo" />
+        </Link>
         <h2 className="title">Placement Portal</h2>
       </div>
 

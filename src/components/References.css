@@ -2,7 +2,7 @@
   padding: 3rem 1.5rem;
   background: linear-gradient(135deg, #f3f6ff, #e4ecff);
   text-align: center;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .references-section h2 {
@@ -18,6 +18,56 @@
   margin: 0 auto 2.5rem;
   line-height: 1.6;
 }
+.references-section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.add-resource-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-resource-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.resource-form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.resource-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.resource-form input,
+.resource-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .resources-container {
   display: grid;

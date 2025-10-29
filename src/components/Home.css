@@ -109,7 +109,8 @@
 
 /* Individual Card */
 .card {
-  background: linear-gradient(135deg, #ffffff, #e6ecff);
+  background: linear-gradient(135deg, #aadffb, #4f6ac3);
+  background-color: rgb(116, 236, 236);
   border-radius: 16px;
   padding: 2rem;
   width: 280px;
@@ -126,7 +127,7 @@
   position: absolute;
   inset: 0;
   border-radius: 16px;
-  background: linear-gradient(120deg, #ffc107, #0056b3, #00bcd4);
+  /*background: linear-gradient(120deg, #ffc107, #0056b3, #00bcd4);*/
   opacity: 0;
   transition: opacity 0.4s ease;
   z-index: 0;

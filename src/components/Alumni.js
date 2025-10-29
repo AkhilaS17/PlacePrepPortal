@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import experiences from "../data/experiences";
 import "./Alumni.css";
-
+import AddExperienceForm from "./AddExperienceForm";
 function Alumni() {
   // 🔹 State hooks must be declared here
   const [expanded, setExpanded] = useState(null);
   const [filter, setFilter] = useState("All"); // for dropdown
   const [search, setSearch] = useState(""); // for search bar
+  const user = JSON.parse(localStorage.getItem("user")); // Get logged-in user
+  const [showForm, setShowForm] = useState(false); // Toggle form visibility
 
   // 🔹 Get unique company list
   const uniqueCompanies = ["All", ...new Set(experiences.map((exp) => exp.company))];
@@ -54,6 +56,24 @@ function Alumni() {
           className="search-input"
         />
       </div>
+      {/* 🔹 Add Experience Button for Students */}
+      {user?.role === "student" && (
+        <div className="add-experience-container">
+          <button className="add-experience-btn" onClick={() => setShowForm(true)}>
+            + Add Experience
+          </button>
+        </div>
+      )}
+      {showForm && (
+      <AddExperienceForm
+        onSubmit={(newExp) => {
+          console.log("New Experience Submitted:", newExp);
+          setShowForm(false);
+          // You can push to experiences array or send to backend here
+        }}
+        onCancel={() => setShowForm(false)}
+      />
+    )}
 
       {/* 🔽 Alumni Cards */}
       <div className="alumni-grid">

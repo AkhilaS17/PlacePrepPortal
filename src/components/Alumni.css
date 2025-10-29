@@ -45,6 +45,16 @@
 .search-input {
   width: 220px;
 }
+.add-experience-btn {
+  background-color: #4caf50;
+  color: rgb(195, 196, 254);
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 
 .alumni-grid {
   display: grid;
