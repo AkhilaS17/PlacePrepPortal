@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./AddExperienceForm.css";
 
-function AddExperienceForm({ onClose }) {
+function AddExperienceForm({ onSubmit, onClose }) {
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -19,8 +19,8 @@ function AddExperienceForm({ onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Experience submitted:", formData);
-    // You can push to localStorage or backend here
-    onClose(); // Close the form after submission
+    onSubmit(formData); // ✅ Send data to parent
+    onClose(); // ✅ Close the form
   };
 
   return (
@@ -37,7 +37,7 @@ function AddExperienceForm({ onClose }) {
           <textarea name="description" placeholder="Enter description" onChange={handleChange} required />
           <div className="form-actions">
             <button type="submit">Submit</button>
-            <button type="submit" onClick={onClose}>Cancel</button>
+            <button type="button" onClick={onClose}>Cancel</button>
           </div>
         </form>
       </div>
