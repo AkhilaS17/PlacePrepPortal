@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./AddExperienceForm.css";
 
-function AddExperienceForm({ onSubmit, onClose }) {
+function AddExperienceForm({ onClose }) {
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -18,9 +18,13 @@ function AddExperienceForm({ onSubmit, onClose }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Experience submitted:", formData);
-    if (onSubmit) onSubmit(formData); // ✅ call parent submit handler
-    if (onClose) onClose();           // ✅ close form after submission
+    const stored = JSON.parse(localStorage.getItem("experiences") || "[]");
+    const newExperience = { id: Date.now(), ...formData };
+    localStorage.setItem("experiences", JSON.stringify([...stored, newExperience]));
+
+    console.log("✅ Experience saved:", newExperience);
+
+    onClose();
   };
 
   return (
