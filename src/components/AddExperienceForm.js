@@ -19,8 +19,8 @@ function AddExperienceForm({ onSubmit, onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Experience submitted:", formData);
-    onSubmit(formData); // ✅ Send data to parent
-    onClose(); // ✅ Close the form
+    if (onSubmit) onSubmit(formData); // ✅ call parent submit handler
+    if (onClose) onClose();           // ✅ close form after submission
   };
 
   return (
