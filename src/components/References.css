@@ -1,0 +1,117 @@
+.references-section {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(135deg, #f3f6ff, #e4ecff);
+  text-align: center;
+  min-height: 90vh;
+}
+
+.references-section h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  color: #444;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+.references-section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.add-resource-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-resource-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.resource-form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.resource-form {
+  width: 100%;
+  max-width: 500px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.resource-form input,
+.resource-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.resources-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.resource-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.resource-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.resource-card h3 {
+  color: #00509e;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.resource-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resource-card li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.resource-card a {
+  color: #003366;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resource-card a:hover {
+  color: #0078ff;
+}

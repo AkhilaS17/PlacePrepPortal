@@ -1,0 +1,39 @@
+.footer {
+  background-color: #003366;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; /* space between items */
+  flex-wrap: wrap; /* ensures responsive stacking on small screens */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #f0f0f0;
+}
+
+.footer-content a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
