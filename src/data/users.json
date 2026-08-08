@@ -1,0 +1,22 @@
+[
+  {
+    "username": "Akhila",
+    "password": "choco17",
+    "role": "student"
+  },
+  {
+    "username": "Himabindu",
+    "password": "bindu456",
+    "role": "student"
+  },
+  {
+    "username": "Srinidhi",
+    "password": "nidhi123",
+    "role": "student"
+  },
+  {
+    "username": "admin1",
+    "password": "admin123",
+    "role": "admin"
+  }
+]
